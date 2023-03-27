@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="svg" href="img/logo.svg">
+    <title>Guava</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="relative">
+
+    <!-- navbar -->
+    <nav class="w-full bg-white sticky top-0 z-50">
+        <div class="container px-4 py-2 lg:py4 flex justify-between items-center mx-auto">
+            <a href="#" class="text-2xl lg:text-3xl xl:text-4xl font-bold cursor-pointer text-transparent bg-clip-text  bg-gradient-to-tl from-teal-500 to-sky-500">Guava</a>
+
+            <!-- menu -->
+            <div class="">
+                <ul class="flex gap-2 lg:gap-8">
+                    <li class="px-1 py-0.5">
+                        <label for="menu">
+                            <a href="#test" id="menu-test" class="text-slate-400 hover:text-sky-500 text-sm font-semibold md:text-base lg:text-lg xl:text-xl" onclick="active('test')">Testing</a>
+                        </label>
+                        <input type="radio" name="menu" id="menu" class="hidden peer">
+                    </li>
+                    <li class="px-1 py-0.5">
+                        <label for="menu">
+                            <a href="#about" id="menu-about" class="text-slate-400 hover:text-sky-500 text-sm font-semibold md:text-base lg:text-lg xl:text-xl" onclick="active('about')">About</a>
+                        </label>
+                        <input type="radio" name="menu" id="menu" class="hidden peer">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- content -->
+    <main class="w-full mx-auto mt-10">
+
+        <!-- hero -->
+        <section id="hero" class="container mx-auto px-4 pt-4 pb-16 lg:pt-32 lg:pb-16">
+            <div class="flex flex-col gap-4">
+                <h1 class="text-5xl lg:text-6xl font-bold text-slate-800">Identifikasi Jenis 
+                    <span class="bg-gradient-to-tl from-teal-500 to-sky-500 text-transparent bg-clip-text">Jambu</span>
+                </h1>
+                <div id="divider" class="w-32 md:60 lg:w-80 h-px bg-sky-500"></div>
+                <p class="text-slate-500 lg:text-lg xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iure alias voluptas vel distinctio nisi ad laboriosam enim ab corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, alias?</p>
+            </div>
+        </section>
+
+        <!-- train -->
+        <section id="train" class="container mx-auto p-4 lg:mt-8">
+            <div class="mb-4">
+                <h1 class="text-2xl lg:text-3xl xl:text-4xl text-slate-800 font-bold">Training Data</h1>
+                <div id="divider" class="w-40 lg:w-60 h-px bg-sky-500 mt-1"></div>
+            </div>
+            <!-- collage -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                <div class="group">
+                    <div class="aspect-video lg:aspect-square group-hover:-translate-y-2 duration-100 border border-slate-300 overflow-hidden rounded-lg">
+                        <img src="assets/img/jambu-air-2.jpg" alt="fruit" class="w-full h-full object-cover">
+                        <div class="absolute hidden transition-all top-0 w-full h-full bg-black/30 group-hover:grid place-items-center text-2xl">
+                            <span class="font-medium text-white flex items-center">Jambu Air</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative">
+                    <div class="aspect-video lg:aspect-square group-hover:-translate-y-2 duration-100 border border-slate-300 overflow-hidden rounded-lg">
+                        <img src="assets/img/jambu-biji-2.jpg" alt="fruit" class="w-full h-full object-cover">
+                        <div class="absolute hidden transition-all top-0 w-full h-full bg-black/30 group-hover:grid place-items-center text-2xl">
+                            <span class="font-medium text-white flex items-center">Jambu Biji</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative">
+                    <div class="aspect-video lg:aspect-square group-hover:-translate-y-2 duration-100 border border-slate-300 overflow-hidden rounded-lg">
+                        <img src="assets/img/jambu-monyet-3.jpg" alt="fruit" class="w-full h-full object-cover">
+                        <div class="absolute hidden transition-all top-0 w-full h-full bg-black/30 group-hover:grid place-items-center text-2xl">
+                            <span class="font-medium text-white flex items-center">Jambu Monyet</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-3 overflow-hidden rounded-lg text-center">
+                    <p class="text-slate-500 text-justify lg:text-xl lg:text-center lg:mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat, quos architecto in, commodi magni expedita, earum sapiente et explicabo ducimus veritatis ipsa obcaecati autem optio minus porro veniam?</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- testing -->
+        <section id="test" class="container mx-auto p-4 lg:pt-8 md:mt-8 lg:mt-12 scroll-mt-4">
+            <div class="flex flex-col gap-2 lg:grid lg:grid-cols-2">
+
+                <!-- title -->
+                <div class="xl:my-14 lg:flex lg:flex-col lg:justify-between">
+                    <div>
+                        <h1 class="text-2xl lg:text-3xl xl:text-4xl text-slate-800 font-bold">Testing Data</h1>
+                        <div id="divider" class="w-40 lg:w-60 h-px bg-sky-500 mt-1"></div>
+                        <p class="text-slate-500 mt-4 lg:text-xl">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa illum dolorum explicabo assumenda ipsa rem quasi fugiat error odio!
+                        </p>
+                        <p class="text-slate-500 mt-2 hidden lg:block lg:text-xl">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, harum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa illum dolorum explicabo assumenda ipsa rem quasi fugiat error odio!
+                        </p>
+                    </div>
+
+                    <!-- upload web -->
+                    <div class="hidden lg:block mt-4">
+                        <div class="flex">
+                            <label for="upload" class="grow-0 cursor-pointer group">
+                                <input type="file" id="upload" onchange="preview()" class="hidden">
+                                <div class="px-8 py-2 bg-gradient-to-r from-sky-500 to-teal-500 rounded-full text-white flex justify-center items-center hover:bg-gradient-to-l hover:from-sky-500 hover:to-teal-500 active:bg-gradient-to-l active:from-sky-600 active:to-teal-600">
+                                    <i class="fi fi-rr-upload mr-2 lg:mr-4 lg:text-lg"></i>
+                                    <span class="text-lg lg:text-xl">Upload Gambar</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div id="img-process" class="mt-8 hidden">
+                            <div id="divider" class="w-[500px] lg:w-60 h-px bg-sky-500 ml-1"></div>
+                            <p class="hidden lg:block lg:text-xl text-slate-500 px-2 text-justify py-2">
+                                Setelah dilakukan proses identifikasi gambar, didapatkan hasil bahwa gambar tersebut adalah <span class="font-bold text-2xl text-sky-500">Jambu Monyet</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- preview -->
+                <div class="py-4 lg:pl-20">
+                    <div id="preview" class=" py-4 mb-2">
+                        <div class="aspect-video border border-sky-500 rounded-lg overflow-hidden">
+                            <img src="assets/img/preview-5.jpeg" id="image" alt="fruit" class="w-full h-full object-cover">
+                        </div>
+                        <p class="lg:hidden text-slate-500 px-2 text-justify py-2">
+                            Setelah dilakukan proses identifikasi gambar, didapatkan hasil bahwa gambar tersebut adalah
+                            <span class="font-bold text-lg text-sky-500">Jambu Monyet</span>
+                        </p>
+                        <div id="divider" class="lg:hidden w-52 lg:w-60 h-px bg-sky-500 ml-1"></div>
+                    </div>
+
+                    <!-- upload mobile -->
+                    <label for="upload" class="lg:hidden cursor-pointer group">
+                        <input type="file" id="upload" onchange="preview()" class="hidden">
+                        <div class="px-6 py-2 bg-gradient-to-r from-sky-500 to-teal-500 rounded-full text-white flex justify-center items-center hover:bg-gradient-to-l hover:from-sky-500 hover:to-teal-500 active:bg-gradient-to-l active:from-sky-600 active:to-teal-600">
+                            <i class="fi fi-rr-upload mr-2"></i>
+                            <span class="text-lg">Upload Gambar</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section id="about" class="container mx-auto p-4 lg:px-4 lg:pt-12 lg:pb-20 md:mt-8 lg:mt-12">
+            <div class="flex flex-col gap-2 text-justify lg:text-start lg:text-xl text-slate-500">
+                <div class="mb-2">
+                    <h1 class="text-2xl lg:text-3xl xl:text-4xl text-slate-800 font-bold">Tentang</h1>
+                    <div id="divider" class="w-24 lg:w-60 h-px bg-sky-500 mt-1"></div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa illum dolorum explicabo assumenda ipsa rem quasi fugiat error odio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, ullam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa illum dolorum explicabo assumenda ipsa rem quasi fugiat error odio! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, deserunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequatur ipsam sunt assumenda eaque magni quaerat minus dolore possimus iusto?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quo quis iure cumque et, velit vel tenetur illo eum deserunt? Dolore blanditiis est maxime tempora adipisci accusamus ad, vitae porro!
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- footers -->
+    <footer class="w-full mt-12 bg-gradient-to-tl from-teal-500 to-sky-500">
+        <div class="container mx-auto px-4 pt-6 pb-8 text-slate-800 lg:text-lg">
+            <div class="font-medium">
+                <i class="bi bi-envelope-fill mr-2"></i>
+                <span>hibatillah21si@mahasiswa.pcr.ac.id</span>
+            </div>
+            <div class="font-medium">
+                <i class="bi bi-envelope-fill mr-2"></i>
+                <span>nadya21si@mahasiswa.pcr.ac.id</span>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        const active = (menu) => {
+            test = document.querySelector('#menu-test');
+            about = document.querySelector('#menu-about');
+            bg_menu = 'text-sky-500';
+
+            if (menu == 'test'){
+                test.classList.add(bg_menu);
+                about.classList.remove(bg_menu);
+            } else if (menu == 'about'){
+                test.classList.remove(bg_menu);
+                about.classList.add(bg_menu);
+            }
+        }
+        const preview = () => {
+            mobileOutput = document.querySelector('#preview');
+            describe = document.querySelector('#img-process');
+            mobileOutput.classList.remove('hidden');
+            describe.classList.remove('hidden');
+
+            upload = document.querySelector('#input');
+            upload.src=URL.createObjectURL(event.target.files[0]);
+        }
+    </script>
+    <div class="container mx-auto py-5">
+        <div class="flex justify-center gap-5">
+            <div class="flex flex-col justify-center items-center">
+                <div class="w-20 h-20 rounded-full overflow-hidden border border-slate-400">
+                    <img src="assets/img/red.jpg" alt="beras merah" class="w-full h-full object-cover">
+                </div>
+                <p class="text-sm text-slate-800 font-semibold mt-1">Beras Merah</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div class="w-20 h-20 rounded-full overflow-hidden border border-slate-400">
+                    <img src="assets/img/white.jpg" alt="beras merah" class="w-full h-full object-cover">
+                </div>
+                <p class="text-sm text-slate-800 font-semibold mt-1">Beras Putih</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div class="w-20 h-20 rounded-full overflow-hidden border border-slate-400">
+                    <img src="assets/img/black.jpg" alt="beras merah" class="w-full h-full object-cover">
+                </div>
+                <p class="text-sm text-slate-800 font-semibold mt-1">Beras Hitam</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

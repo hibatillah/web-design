@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<style>
+    .pattern {
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 17px ), repeating-linear-gradient( #444cf755, #444cf7 );
+  }
+</style>
+<body class="bg-blue-500 xl:bg-blue-700 2xl:bg-blue-900">
+    <div class="min-w-screen min-h-screen lg:grid lg:grid-cols-2">
+        <div class="col-span-1 flex flex-col gap-4 justify-center items-center h-full">
+            <div id="menu" class="relative w-64 flex gap-1 bg-gray-200 p-1 rounded-md text-sm overflow-hidden">
+                <button id="login" value="Login" class="flex-auto rounded-sm h-full p-1.5 bg-white">Login</button>
+                <button id="signUp" value="Sign Up" class="flex-auto rounded-sm h-full p-1.5">Sign Up</button>
+                <!-- <span id="active" class="absolute h-8 w-1/2 bg-white rounded-sm text-slate-800 transition-all flex justify-center items-center">h</span> -->
+            </div>
+            <div class="form flex gap-4 w-64 overflow-hidden">
+                <form action="" method="post" id="login" class="flex-none w-64 space-y-2">
+                    <label htmlFor="username" class="cursor-pointer px-3 py-2 flex gap-2 items-center rounded-md border border-slate-400">
+                        <PersonFill class="text-slate-500 text-sm" />
+                        <input type="text" name="username" id="username" placeholder="username" class="w-full text-sm focus:outline-none bg-inherit" />
+                    </label>
+                    <label htmlFor="password" class="cursor-pointer px-3 py-2 flex gap-2 items-center rounded-md border border-slate-400">
+                        <KeyFill class="text-slate-500 text-sm" />
+                        <input type="password" name="password" id="password" placeholder="password" class="w-full text-sm focus:outline-none bg-inherit" />
+                    </label>
+                    <button type="submit" class="w-full pt-1.5 pb-2 bg-blue-700 rounded-md text-sm font-semibold text-white tracking-wide">LOGIN</button>
+                </form>
+                <form action="" method="post" id="signUp" class="flex-none w-64 space-y-2">
+                    <label htmlFor="username" class="cursor-pointer px-3 py-2 flex gap-2 items-center rounded-md border border-slate-400">
+                        <PersonFill class="text-slate-500 text-sm" />
+                        <input type="text" name="username" id="username" placeholder="username" class="w-full text-sm focus:outline-none bg-inherit" />
+                    </label>
+                    <label htmlFor="email" class="cursor-pointer px-3 py-2 flex gap-2 items-center rounded-md border border-slate-400">
+                        <EnvelopeFill class="text-slate-500 text-sm" />
+                        <input type="email" name="email" id="email" placeholder="email" class="w-full text-sm focus:outline-none bg-inherit" />
+                    </label>
+                    <label htmlFor="password" class="cursor-pointer px-3 py-2 flex gap-2 items-center rounded-md border border-slate-400">
+                        <KeyFill class="text-slate-500 text-sm" />
+                        <input type="password" name="password" id="password" placeholder="password" class="w-full text-sm focus:outline-none bg-inherit" />
+                    </label>
+                    <button type="submit" class="w-full pt-1.5 pb-2 bg-blue-700 rounded-md text-sm font-semibold text-white tracking-wide">SIGN UP</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-span-1 pattern">
+            <!-- <img src="" alt="login" class="img-cover" /> -->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const menu = document.querySelector('menu');
+        const button = menu.querySelectorAll('button');
+
+        button.addEventListener('click', () => {
+            button.forEach(e => {
+                e.classList.toggle('bg-white');
+            })
+        })
+    </script>
+</body>
+</html>

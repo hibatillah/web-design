@@ -1,0 +1,14 @@
+.fade{
+    animation: slideUp 1s ease-in-out;
+}
+
+
+
+a.nav-link:hover{
+    color: blue;
+}
+
+@keyframes slideUp {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
