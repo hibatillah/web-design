@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<style>
+    .header {
+        height: calc(100vh - 85px);
+    }
+</style>
 <body class="bg-slate-900">
 
     <!-- navbar -->
@@ -37,8 +42,8 @@
     </nav>
 
     <!-- hero -->
-    <header id="header" class="border-b border-dashed border-slate-700" style="height: calc(100vh - 85px);">
-        <div class="container mx-auto px-12 h-full flex flex-col justify-center gap-4">
+    <header  class="border-b border-dashed border-slate-700">
+        <div class="container mx-auto px-12 h-full flex flex-col justify-center gap-4 header">
             <div class="w-3/5 space-y-6">
                 <h1 class="text-6xl text-white font-bold tracking-wide">
                     Klasifikasi Gambar <br> dengan <span class="bg-gradient-to-tl from-teal-400  to-blue-600 text-transparent bg-clip-text">Deep Learning</span>
@@ -111,9 +116,9 @@
                             <p class="text-slate-400">
                                 memiliki bentuk seperti lonceng yang mengerucut dan berbentuk ketas, sisi luar berwarna merah, daging buah putih dan berair.
                             </p>
-                            <button class="text-blue-500 hidden text-sm group-hover:flex group-hover:items-end hover:underline">
-                                <a href="https://id.wikipedia.org/wiki/Jambu_air" target="_blank">Selengkapnya <span>&rarr;</span></a>
-                            </button>
+                            <div class="text-blue-500 hidden text-sm group-hover:flex group-hover:items-end hover:underline">
+                                <a href="https://id.wikipedia.org/wiki/Jambu_air" target="_blank" rel="noopener">Selengkapnya <span>&rarr;</span></a>
+                            </div>
                         </div>
                     </div>
 
@@ -124,9 +129,9 @@
                             <p class="text-slate-400">
                                 memiliki buah berwarna hijau dengan daging buah berwarna putih atau merah dan berasa asam-manis. Buah jambu biji dikenal mengandung banyak vitamin C.
                             </p>
-                            <button class="text-blue-500 hidden text-sm group-hover:flex group-hover:items-end hover:underline">
-                                <a href="https://id.wikipedia.org/wiki/Jambu_biji" target="_blank">Selengkapnya <span>&rarr;</span></a>
-                            </button>
+                            <div class="text-blue-500 hidden text-sm group-hover:flex group-hover:items-end hover:underline">
+                                <a href="https://id.wikipedia.org/wiki/Jambu_biji" target="_blank" rel="noopener">Selengkapnya <span>&rarr;</span></a>
+                            </div>
                         </div>
                     </div>
 
@@ -137,9 +142,9 @@
                             <p class="text-slate-400">
                                 memiliki bentuk bulat lonjong berwarna kuning atau merah, berdaging lunak, dengan biji berkulit keras berwarna cokelat kehitaman yang menggantung di ujung buah.
                             </p>
-                            <button class="text-blue-500 hidden text-sm group-hover:flex group-hover:items-end hover:underline">
-                                <a href="https://id.wikipedia.org/wiki/Jambu_mete" target="_blank">Selengkapnya <span>&rarr;</span></a>
-                            </button>
+                            <div class="text-blue-500 hidden text-sm group-hover:flex group-hover:items-end hover:underline">
+                                <a href="https://id.wikipedia.org/wiki/Jambu_mete" target="_blank" rel="noopener">Selengkapnya <span>&rarr;</span></a>
+                            </div>
                         </div>
                     </div>
 
