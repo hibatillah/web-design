@@ -13,11 +13,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<style>
-    .header {
-        height: calc(100vh - 85px);
-    }
-</style>
 <body class="bg-slate-900">
 
     <!-- navbar -->
@@ -43,7 +38,7 @@
 
     <!-- hero -->
     <header  class="border-b border-dashed border-slate-700">
-        <div class="container mx-auto px-12 h-full flex flex-col justify-center gap-4 header">
+        <div class="container mx-auto px-12 flex flex-col justify-center gap-4 h-[calc(100vh-85px)]">
             <div class="w-3/5 space-y-6">
                 <h1 class="text-6xl text-white font-bold tracking-wide">
                     Klasifikasi Gambar <br> dengan <span class="bg-gradient-to-tl from-teal-400  to-blue-600 text-transparent bg-clip-text">Deep Learning</span>
@@ -112,7 +107,7 @@
                     <div>
                         <div class="px-6 pt-8 pb-16 hover:pb-8 space-y-2 rounded-xl hover:shadow-lg hover:bg-white/5 hover:backdrop-blur-3xl hover:ring-1 hover:ring-white/10 group cursor-pointer">
                             <i class="fi fi-rr-bookmark text-3xl text-blue-900 group-hover:text-blue-600"></i>
-                            <h1 class="text-lg font-medium text-white">Beras Merah 0</h1>
+                            <h1 class="text-lg font-medium text-white">Jambu Air</h1>
                             <p class="text-slate-400">
                                 memiliki bentuk seperti lonceng yang mengerucut dan berbentuk ketas, sisi luar berwarna merah, daging buah putih dan berair.
                             </p>
@@ -297,9 +292,9 @@
 
     <a id="back-top" href="#" class="fixed bottom-5 right-4 px-2 py-1 rounded bg-blue-700 ring-1 ring-slate-400/50 hidden">
         <i class="bi bi-arrow-up text-white"></i>
+        <span class="hidden">.</span>
     </a>
-
-    <!-- https://skillplus.web.id/data-training-validation-dan-test/ -->
-    <script src="app.js"></script>
+    
+    <script src="resources/app.js"></script>
 </body>
 </html>
