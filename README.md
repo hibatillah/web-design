@@ -1,6 +1,6 @@
 # Web Design
-Create various web designs💻 as collections, love to design💖 <br>
-Here are some design collections on this repo🔥
+Create various web designs💻 as collections, love to design💖  <br>
+Here are some design collections on this repo, create by [Hibatillah](https://github.com/hibatillah) with🔥
 
 ### Guava Classification
 <img src="https://user-images.githubusercontent.com/99963638/228620661-a3b59a91-7448-4008-9174-f879e684483d.png" width="70%" />
