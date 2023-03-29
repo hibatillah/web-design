@@ -17,30 +17,122 @@
     }
   }
 </style>
-<body class="h-[50rem]">
+<body class="h-[50rem] font-serif">
   
   <header class="w-full">
-    <div class="container h-screen grid grid-cols-5">
-      <div class="col-span-2 grid grid-cols-2 gap-2">
-        <div class="col-span-1 flex flex-col gap-2">
-  
+    <div class="container mx-auto max-h-screen grid grid-cols-5">
+      <div class="col-span-2 grid grid-cols-2 gap-4 pr-4">
+        <div class="col-span-1 space-y-4">
+          <div class="w-full h-[20dvh] bg-slate-200">
+            <img src="https://source.unsplash.com/random/?things" alt="things" class="w-full h-full object-cover">
+          </div>
+          <div class="w-full h-[49dvh] bg-slate-200">
+            <img src="https://source.unsplash.com/random/?fashion" alt="fashion" class="w-full h-full object-cover">
+          </div>
+          <div class="w-full h-[49dvh] bg-slate-200">
+            <img src="https://source.unsplash.com/random/?food" alt="food" class="w-full h-full object-cover">
+          </div>
         </div>
-        <div class="col-span-1 flex flex-col gap-2">
-          
+        <div class="col-span-1 flex flex-col gap-4">
+          <div class="w-full h-[49dvh] bg-slate-200">
+            <img src="https://source.unsplash.com/random/?travel" alt="travel" class="w-full h-full object-cover">
+          </div>
+          <div class="w-full h-[49dvh] bg-slate-200">
+            <img src="https://source.unsplash.com/random/?shopping  " alt="shopping" class="w-full h-full object-cover">
+          </div>
         </div>
       </div>
-      <div class="col-span-3 container p-6">
+      <div class="col-span-3 max-h-screen container mx-auto px-6 py-4 flex flex-col bg-orange-50">
         <div class="flex justify-between items-center">
-          <div class="text-lg font-bold">brand</div>
-          <ul class="flex items-center">
-            <li class="px-6 py-1 rounded-lg hover:bg-slate-300">Menu</li>
-            <li class="px-6 py-1 rounded-lg hover:bg-slate-300">Menu</li>
-            <li class="px-6 py-1 rounded-lg hover:bg-slate-300">Menu</li>
+          <div class="text-lg font-bold text-slate-900">Wonderful World</div>
+          <ul class="flex items-center gap-2">
+            <li class="px-3 py-1 rounded cursor-pointer hover:bg-stone-200/80">Category</li>
+            <li>•</li>
+            <li class="px-3 py-1 rounded cursor-pointer hover:bg-stone-200/80">about</li>
           </ul>
+        </div>
+        <div class="flex-1 grid place-items-center">
+          <div class="max-w-[60%] space-y-2">
+              <div class="flex gap-3 items-center">
+                <div class="w-8 aspect-square grid place-items-center rounded-full bg-neutral-900 text-white">&copy;</div>
+                <p>Brand in Indonesia</p>
+                <div class="w-32 h-0.5 rounded bg-neutral-900"></div>
+              </div>
+              <p class="uppercase text-slate-600">meet me</p>
+              <h1 class="text-7xl font-semibold">Get<br>Wonderful<br>Photo</h1>
+              <p class="text-slate-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur illo tempora id dicta quod dolores deserunt illum necessitatibus est. Neque dicta necessitatibus cumque nihil sapiente vitae dolorum incidunt! Veniam, explicabo.
+              </p>
+          </div>
         </div>
       </div>
     </div>
   </header>
+
+  <main class="w-full overflow-hidden">
+    <section class="container mx-auto px-10 pt-20 mt-48">
+      <div class="">
+        <p class="text-slate-500 uppercase">Why Us</p>
+        <h1 class="text-5xl font-semibold">I use my creativity and expertise to create timeless expressions and meaningful experiences for brands.</h1>
+      </div>
+      <div class="flex justify-start items-center gap-6 mt-12">
+        <div class="w-24 aspect-square grid place-items-center rounded-full border border-neutral-900">
+          <span class="text-3xl font-medium">&rarr;</span>
+        </div>
+        <p class="w-3/4">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab rerum exercitationem asperiores, quo voluptatibus quam saepe at error qui magnam assumenda, adipisci dicta laboriosam enim aspernatur unde sequi temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, maiores fugiat culpa corporis repellat et placeat beatae accusantium. Praesentium, quibusdam.
+        </p>
+      </div>
+      <div class="w-full h-96 mt-28">
+        <ul class="flex gap-6 h-full">
+          <li class="flex-none w-[400px] h-full bg-slate-200">
+            <img src="https://source.unsplash.com/random/?nature" alt="nature " class="w-full h-full object-cover">
+          </li>
+          <li class="flex-none w-[500px] h-full bg-slate-200">
+            <img src="https://source.unsplash.com/random/?aesthetic" alt="aesthetic" class="w-full h-full object-cover">
+          </li>
+          <li class="flex-none w-[500px] h-full bg-slate-200">
+            <img src="https://source.unsplash.com/random/?shadow" alt="shadow" class="w-full h-full object-cover">
+          </li>
+          <li class="flex-none w-[500px] h-full bg-slate-200">
+            <img src="https://source.unsplash.com/random/?wind" alt="wind" class="w-full h-full object-cover">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="container mx-auto p-10 space-y-8">
+      <h1 class="text-5xl font-semibold">What we can do</h1>
+      <div class="grid grid-cols-3 gap-6">
+        <div class="w-full aspect-square p-10 grid place-items-center bg-blue-100">
+          <div class="">
+            <div class="w-20 aspect-square mb-6 rounded-full grid place-items-center bg-slate-100"></div>
+            <h2 class="text-2xl font-medium">Build photo concept</h2>
+            <p class="text-slate-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto maxime fuga eveniet ab quas sunt velit placeat unde exercitationem laborum?
+            </p>
+          </div>
+        </div>
+        <div class="w-full aspect-square p-10 grid place-items-center bg-teal-100">
+          <div class="">
+            <div class="w-20 aspect-square mb-6 rounded-full grid place-items-center bg-slate-100"></div>
+            <h2 class="text-2xl font-medium">Take Wonderful photo</h2>
+            <p class="text-slate-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto maxime fuga eveniet ab quas sunt velit placeat unde exercitationem laborum?
+            </p>
+          </div>
+        </div>
+        <div class="w-full aspect-square p-10 grid place-items-center bg-indigo-100">
+          <div class="">
+            <div class="w-20 aspect-square mb-6 rounded-full grid place-items-center bg-slate-100"></div>
+            <h2 class="text-2xl font-medium">Editing aesthetic photo</h2>
+            <p class="text-slate-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto maxime fuga eveniet ab quas sunt velit placeat unde exercitationem laborum?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   
 </body>
 </html>
