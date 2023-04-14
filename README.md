@@ -1,6 +1,6 @@
 # Web Design
-Passionate  to create various web designs🎲. Here are some design collections on this repo. <br>
-create by [Hibatillah](https://github.com/hibatillah) with🔥
+Passionate  to create various web designs🎲 Here are some design collections! <br>
+Styling using [Tailwind CSS](https://tailwindcss.com), Collection by [hibatillah](https://github.com/hibatillah)
 
 ### Wonderful Photo
 <img src="https://user-images.githubusercontent.com/99963638/228641060-87918ac1-03b2-478d-a09e-78ec7fe17571.jpeg" width="80%" />
